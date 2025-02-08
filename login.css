@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(250, 59, 221, 0.8),rgba(59, 250, 240, 0.8)),url(homeimg.webp);
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form-toggle button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+body{
+  background-color: rgb(81, 81, 241);
+}
+
+header{
+  width: 96%;
+  background-color: #ffff;
+  position: fixed;
+  top: 2rem; left: 50%;
+  transform: translate(-50%);
+  border-radius:  5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+header .navbar ul{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  list-style: none;   
+}
+
+header .navbar ul li{
+
+  margin: 0 1rem;
+}
+header .navbar ul li a{
+
+  font-size: 1.5rem;
+  color:var(--pink);
+  transition: .2s;
+}
+header .navbar ul li .active,
+header .navbar ul li a:hover{
+  color: var(--violet);
+}
+
+header .logo{
+  font-size: 2.5rem;
+  color: var(--violet);
+  text-transform: uppercase;
+}
+
+header .logo i{
+  color: var(--pink);
+  padding: 0 .2rem;
+}
+
+header .fa-bars{
+  font-size: 3rem;
+  color: var(--pink);
+  cursor: pointer;
+ 
+}
+
+@media (max-width:768px)
+{
+    html{
+        font-size: 55%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position:fixed;
+        top:5.7rem; left: 0;
+        width: 100%;
+        background: #ffff;
+        border-radius: 1rem;
+       
+
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding: 1rem 0;
+    }
+
+    header .navbar ul li{
+        margin:1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+       
+  }
